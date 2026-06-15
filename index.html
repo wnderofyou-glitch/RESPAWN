@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RESPAWN — компьютерный клуб</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">RESPAWN<span></a>
+
+      <nav class="nav" id="nav">
+        <a href="#about">О клубе</a>
+        <a href="#zones">Зоны</a>
+        <a href="#equipment">Оборудование</a>
+        <a href="#tariffs">Тарифы</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="btn btn-primary" href="#booking">Забронировать</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Компьютерный клуб</div>
+          <h1>Играй на максимуме в RESPAWN</h1>
+          <p>
+            Современный компьютерный клуб с мощными игровыми зонами, VIP-местами,
+            PlayStation и пространством для командных тренировок.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-primary">Забронировать место</a>
+            <a href="#tariffs" class="btn btn-secondary">Посмотреть тарифы</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>29</strong>
+              <span>игровых мест</span>
+            </div>
+            <div class="hero-stat">
+              <strong>24/7</strong>
+              <span>работаем без выходных</span>
+            </div>
+            <div class="hero-stat">
+              <strong>4</strong>
+              <span>игровые зоны</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="availability-card">
+            <div class="availability-card-top">
+              <strong>Сейчас свободно</strong>
+              <span class="availability-status"><i></i> места доступны</span>
+            </div>
+            <div class="availability-list">
+              <div class="availability-item">
+                <strong>10/16</strong>
+                <span>PC</span>
+              </div>
+              <div class="availability-item">
+                <strong>3/6</strong>
+                <span>VIP</span>
+              </div>
+              <div class="availability-item">
+                <strong>1/2</strong>
+                <span>PS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">О клубе</div>
+            <h2>Всё для комфортной игры</h2>
+          </div>
+          <p class="section-description">
+            Клуб объединяет современные игровые компьютеры, удобные зоны отдыха и сервис,
+            который позволяет сосредоточиться только на игре.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h3>Мощное железо</h3>
+            <p>Компьютеры подходят для современных игр и обеспечивают стабильную производительность.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">🎮</div>
+            <h3>Разные зоны</h3>
+            <p>Основной зал, VIP-места, консольная зона и пространство для командной игры.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">🕘</div>
+            <h3>Круглосуточно</h3>
+            <p>Клуб работает каждый день без перерывов, поэтому играть можно в удобное время.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">🏆</div>
+            <h3>Турниры</h3>
+            <p>Регулярные игровые события, тренировки команд и встречи для постоянных гостей.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="zones">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Игровые зоны</div>
+            <h2>Выберите свой формат игры</h2>
+          </div>
+          <p class="section-description">
+            Для обычных визитов, комфортного отдыха, игры на консоли и командных тренировок.
+          </p>
+        </div>
+
+        <div class="zones-grid">
+          <article class="zone-card">
+            <div class="zone-image zone-image-pc"></div>
+            <div class="zone-content">
+              <h3>PC-зона</h3>
+              <p>16 игровых мест для повседневной игры и встреч с друзьями.</p>
+              <div class="zone-meta">
+                <span>16 мест</span>
+                <span class="zone-price">от 120 ₽/ч</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="zone-card">
+            <div class="zone-image zone-image-vip"></div>
+            <div class="zone-content">
+              <h3>VIP-зона</h3>
+              <p>6 мест с усиленной конфигурацией и более приватной атмосферой.</p>
+              <div class="zone-meta">
+                <span>6 мест</span>
+                <span class="zone-price">от 180 ₽/ч</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="zone-card">
+            <div class="zone-image zone-image-ps"></div>
+            <div class="zone-content">
+              <h3>PlayStation</h3>
+              <p>2 консольные зоны с диванами и большими экранами.</p>
+              <div class="zone-meta">
+                <span>2 зоны</span>
+                <span class="zone-price">от 250 ₽/ч</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="zone-card">
+            <div class="zone-image zone-image-bootcamp"></div>
+            <div class="zone-content">
+              <h3>Bootcamp</h3>
+              <p>5 компьютеров рядом для тренировок и командных матчей.</p>
+              <div class="zone-meta">
+                <span>5 мест</span>
+                <span class="zone-price">от 700 ₽/ч</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="equipment">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Оборудование</div>
+            <h2>Техника для стабильной игры</h2>
+          </div>
+          <div class="tabs" aria-label="Переключение оборудования">
+            <button class="tab-button active" data-tab="pc">PC</button>
+            <button class="tab-button" data-tab="vip">VIP</button>
+            <button class="tab-button" data-tab="ps">PlayStation</button>
+          </div>
+        </div>
+
+        <div class="equipment-wrap">
+          <div class="equipment-preview"></div>
+
+          <div>
+            <div class="equipment-panel active" id="pc">
+              <div class="equipment-item">
+                <span>Видеокарта</span>
+                <strong>GeForce RTX 3060 12 GB</strong>
+              </div>
+              <div class="equipment-item">
+                <span>Процессор</span>
+                <strong>Intel Core i5-12400F</strong>
+              </div>
+              <div class="equipment-item">
+                <span>Оперативная память</span>
+                <strong>16 GB DDR4</strong>
+              </div>
+              <div class="equipment-item">
+                <span>Монитор</span>
+                <strong>24” Full HD, 144 Hz</strong>
+              </div>
+            </div>
+
+            <div class="equipment-panel" id="vip">
+              <div class="equipment-item">
+                <span>Видеокарта</span>
+                <strong>GeForce RTX 4070 12 GB</strong>
+              </div>
+              <div class="equipment-item">
+                <span>Процессор</span>
+                <strong>Intel Core i7-13700F</strong>
+              </div>
+              <div class="equipment-item">
+                <span>Оперативная память</span>
+                <strong>32 GB DDR5</strong>
+              </div>
+              <div class="equipment-item">
+                <span>Монитор</span>
+                <strong>27” QHD, 240 Hz</strong>
+              </div>
+            </div>
+
+            <div class="equipment-panel" id="ps">
+              <div class="equipment-item">
+                <span>Консоль</span>
+                <strong>PlayStation 5</strong>
+              </div>
+              <div class="equipment-item">
+                <span>Экран</span>
+                <strong>55” 4K Smart TV</strong>
+              </div>
+              <div class="equipment-item">
+                <span>Геймпады</span>
+                <strong>2 DualSense</strong>
+              </div>
+              <div class="equipment-item">
+                <span>Зона</span>
+                <strong>Диван на 3–4 человека</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tariffs">
+      <div class="container">
+        <div class="tariff-top">
+          <div>
+            <div class="eyebrow">Тарифы</div>
+            <h2>Понятные цены для разных форматов</h2>
+          </div>
+          <p class="section-description">
+            На первом этапе оставил тарифы для PC-зоны. Позже можем сделать отдельные вкладки для VIP и PlayStation.
+          </p>
+        </div>
+
+        <div class="tariffs-grid">
+          <article class="tariff-card">
+            <div class="tariff-label">Базовый</div>
+            <h3>1 час</h3>
+            <div class="tariff-price">120 ₽</div>
+            <p>Подходит для короткой игровой сессии.</p>
+            <a href="#booking" class="btn btn-secondary">Выбрать</a>
+          </article>
+
+          <article class="tariff-card">
+            <div class="tariff-label">Популярный</div>
+            <h3>3 часа</h3>
+            <div class="tariff-price">320 ₽</div>
+            <p>Выгоднее почасовой оплаты и удобно для обычного визита.</p>
+            <a href="#booking" class="btn btn-secondary">Выбрать</a>
+          </article>
+
+          <article class="tariff-card featured">
+            <div class="tariff-label">Лучшее предложение</div>
+            <h3>5 часов</h3>
+            <div class="tariff-price">500 ₽</div>
+            <p>Для длительной игры и компаний друзей.</p>
+            <a href="#booking" class="btn btn-primary">Выбрать</a>
+          </article>
+
+          <article class="tariff-card">
+            <div class="tariff-label">Ночной пакет</div>
+            <h3>22:00–08:00</h3>
+            <div class="tariff-price">750 ₽</div>
+            <p>Доступ ко всей ночной смене по фиксированной цене.</p>
+            <a href="#booking" class="btn btn-secondary">Выбрать</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Акции</div>
+            <h2>Предложения для гостей клуба</h2>
+          </div>
+        </div>
+
+        <div class="promos-grid">
+          <article class="promo-card">
+            <h3>Скидка студентам</h3>
+            <p>Минус 15% на почасовую игру при предъявлении студенческого билета.</p>
+          </article>
+          <article class="promo-card">
+            <h3>Первый визит</h3>
+            <p>30 минут в подарок новым гостям после регистрации в клубе.</p>
+          </article>
+          <article class="promo-card">
+            <h3>Командная игра</h3>
+            <p>Специальные условия для бронирования bootcamp-зоны на 5 человек.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Галерея</div>
+            <h2>Атмосфера клуба</h2>
+          </div>
+          
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item-1"></div>
+          <div class="gallery-item gallery-item-2"></div>
+          <div class="gallery-item gallery-item-3"></div>
+          <div class="gallery-item gallery-item-4"></div>
+          <div class="gallery-item gallery-item-5"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="booking">
+      <div class="container">
+        <div class="booking-card">
+          <div class="booking-copy">
+            <div class="eyebrow">Бронирование</div>
+            <h2>Забронируйте место заранее</h2>
+            <p>
+              Заполните форму, и администратор свяжется с вами для подтверждения заявки.
+            </p>
+            
+          </div>
+
+          <form class="booking-form" id="bookingForm">
+            <div class="field">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Введите имя" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required />
+            </div>
+
+            <div class="field">
+              <label for="date">Дата</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <div class="field">
+              <label for="time">Время</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+
+            <div class="field">
+              <label for="zone">Зона</label>
+              <select id="zone" name="zone" required>
+                <option value="">Выберите зону</option>
+                <option value="PC-зона">PC-зона</option>
+                <option value="VIP-зона">VIP-зона</option>
+                <option value="PlayStation">PlayStation</option>
+                <option value="Bootcamp">Bootcamp</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="guests">Количество мест</label>
+              <input type="number" id="guests" name="guests" min="1" max="5" placeholder="1" required />
+            </div>
+
+            <div class="field full">
+              <label for="comment">Комментарий</label>
+              <textarea id="comment" name="comment" placeholder="Например: нужна VIP-зона на 3 часа"></textarea>
+            </div>
+
+            <div class="form-message" id="formMessage">
+              Заявка отправлена. Администратор свяжется с вами для подтверждения бронирования.
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Отправить заявку</button>
+              
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Контакты</div>
+            <h2>Как нас найти</h2>
+          </div>
+        </div>
+
+        <div class="contacts-grid">
+          <div class="contact-card">
+            <h3>RESPAWN</h3>
+            <div class="contact-list">
+              <div class="contact-item">
+                <span>Адрес</span>
+                <strong>г. Самара, ул. Молодогвардейская, 154</strong>
+              </div>
+              <div class="contact-item">
+                <span>Телефон</span>
+                <strong>+7 (777) 000-00-00</strong>
+              </div>
+              <div class="contact-item">
+                <span>Режим работы</span>
+                <strong>Круглосуточно</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9b5c20acd575ce92ded7dc8f64bd497f447fb0a682155ce52ac978935be6fca4&amp;
+            source=constructor" width="652" height="400" frameborder="0">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© 2026 RESPAWN</div>
+      <div class="footer-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">ВКонтакте</a>
+        <a href="#">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
