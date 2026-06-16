@@ -6,7 +6,7 @@ const tabButtons = document.querySelectorAll('.tab-button');
 const panels = document.querySelectorAll('.equipment-panel');
 const bookingForm = document.getElementById('bookingForm');
 const formMessage = document.getElementById('formMessage');
-const FORM_ENDPOINT = 'https://formspree.io/f/mnjyrakk';
+const FORM_ENDPOINT = 'https://formspree.io/f/mvznyopd';
 
 window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 20);
