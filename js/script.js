@@ -6,6 +6,7 @@ const tabButtons = document.querySelectorAll('.tab-button');
 const panels = document.querySelectorAll('.equipment-panel');
 const bookingForm = document.getElementById('bookingForm');
 const formMessage = document.getElementById('formMessage');
+const FORM_ENDPOINT = 'https://formspree.io/f/mnjyrakk';
 
 window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 20);
@@ -34,8 +35,37 @@ tabButtons.forEach((button) => {
   });
 });
 
-bookingForm.addEventListener('submit', (event) => {
+bookingForm.addEventListener('submit', async (event) => {
   event.preventDefault();
-  formMessage.style.display = 'block';
-  bookingForm.reset();
+
+  const submitButton = bookingForm.querySelector('button[type="submit"]');
+  const formData = new FormData(bookingForm);
+
+  submitButton.disabled = true;
+  submitButton.textContent = 'Отправка...';
+
+  try {
+    const response = await fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        Accept: 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      formMessage.textContent = 'Заявка отправлена. Администратор свяжется с вами для подтверждения бронирования.';
+      formMessage.style.display = 'block';
+      bookingForm.reset();
+    } else {
+      formMessage.textContent = 'Не удалось отправить заявку. Попробуйте ещё раз.';
+      formMessage.style.display = 'block';
+    }
+  } catch (error) {
+    formMessage.textContent = 'Ошибка соединения. Попробуйте отправить заявку позже.';
+    formMessage.style.display = 'block';
+  }
+
+  submitButton.disabled = false;
+  submitButton.textContent = 'Отправить заявку';
 });
